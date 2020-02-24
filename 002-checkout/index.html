@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Day 002 - Checkout</title>
+
+    <link rel="stylesheet" href="./checkout.css">
+</head>
+<body>
+<div class="container">
+    <div class="card">
+        <div class="card-info">
+            <img src="https://png-4.vector.me/files/images/1/1/11538/chip_thumb.png" alt="credit card chip" class="chip">
+            <img src="https://static.seekingalpha.com/uploads/2017/6/28/44583886-14986589045573394_origin.png" alt="Visa" class="logo">
+            <div class="full">
+                <input type="text" id="cc-number" placeholder="Card Number">
+                <label for="cc-number">Card number</label>
+            </div>
+            <div>
+                <input type="text" id="card-holder" placeholder="Card holder">
+                <label for="card-holder">Card Holder</label>
+            </div>
+            <div>
+                <input type="month" id="expiration" placeholder="Expiration date">
+                <label for="expiration">Expiration date</label>
+            </div>
+        </div>
+        <div class="order">
+            <div class="productname">
+                <p>you are paying for</p>
+                <h4>Fallout 4</h4>
+            </div>
+            <div class="prices">
+                <div>
+                    <p>Amount</p>
+                    <span>54.76$</span>
+                </div>
+                <div>
+                    <p>Shipping</p>
+                    <span>0.00$</span>
+                </div>
+                <div class="full">
+                    <p>Total</p>
+                    <span>54.76$</span>
+                </div>
+            </div>
+        </div>
+        <button type="button" class="submit">Make Payment</button>
+    </div>
+</div>
+
+<footer>
+    <a href="https://dribbble.com/shots/2418332-Daily-UI-22-Payment" class="design">
+        Designed by Pat Wasik
+    </a>
+
+    <a href="https://codepen.io/mlledesmeules/pen/NWqdPqL" class="codepen" target="_blank">Codepen</a>
+</footer>
+</body>
+</html>

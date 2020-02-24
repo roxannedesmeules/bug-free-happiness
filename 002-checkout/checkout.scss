@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,900&display=swap');
+
+$lightBlue: #D1DDF5;
+$darkBlue: #7C99D6;
+$border: #F1F5FF;
+
+body {
+	font-family: 'Lato';
+	background-color: #F2F2F9;
+	margin: 0;
+	padding: 0;
+
+	* {
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	}
+}
+
+.container {
+	padding: 2rem;
+}
+
+.card {
+	width: 400px;
+	position: relative;
+	margin: auto;
+	background: #ffffff;
+	border-radius: 8px;
+	box-shadow: 2px 2px 15px rgba(0,0,0,0.2);
+
+	.card-info {
+		display: flex;
+		flex-flow: row wrap;
+		align-content: space-between;
+		justify-content: space-between;
+		padding: 1rem;
+		background: linear-gradient(125deg, rgba(104,148,252,1) 12%, rgba(67,114,226,1) 100%);
+		border-radius: 8px 8px 0 0;
+
+		&::before, &::after {
+			content: '';
+			width: 100%;
+			order: 1;
+		}
+
+		.chip {
+			width: 70px;
+		}
+
+		.logo {
+			height: 45px;
+			margin-top: 0.7rem;
+		}
+
+		& > div.full {
+			order: 1;
+			flex-grow: 2;
+		}
+
+		& > div {
+			order: 2;
+			flex-grow: 1;
+
+			position: relative;
+			padding: 0.8rem 0.2rem 0 0.2rem;
+			margin: 0 0 1.5rem 0;
+			display: flex;
+			flex-direction: column;
+
+			> label {
+				position: absolute;
+				top: 1.6rem;
+				bottom: 0;
+				transition: 0.2s;
+				color: #ffffff;
+				user-select: none;
+			}
+
+			> input {
+				background: transparent;
+				padding: 0.8rem 0 0.8rem 0;
+				border: none;
+				border-bottom: 2px solid $border;
+				color: #ffffff;
+				font-size: 0.9rem;
+
+				&::placeholder { color: transparent; }
+
+				&:focus,
+				&:not(:placeholder-shown) {
+					outline: none;
+					border-bottom: 2px solid #afc5ff;
+				}
+
+				&:focus + label,
+				&:not(:placeholder-shown) + label {
+					top: 0.5rem;
+					padding: 0;
+					font-size: 0.6rem;
+					font-weight: bold;
+					text-transform: uppercase;
+					color: #afc5ff;
+				}
+			}
+		}
+	}
+
+	.productname {
+		padding: 1rem 0;
+		background: #F9FBFF;
+		font-weight: bold;
+		text-align: center;
+
+		p {
+			font-size: 0.9rem;
+			font-weight: 300;
+			line-height: 1.2rem;
+			color: $lightBlue;
+		}
+
+		h4 {
+			color: $darkBlue;
+			font-size: 1.5rem;
+			line-height: 1.9rem;
+			font-weight: bold;
+		}
+	}
+
+	.prices {
+		display: flex;
+		flex-flow: row wrap;
+		align-content: space-between;
+		justify-content: space-between;
+		padding: 0 1.5rem 2rem 1.5rem;
+		text-align: center;
+
+		&::before, &::after {
+			content: '';
+			width: 100%;
+			order: 1;
+		}
+
+		& > div {
+			order: 1;
+			flex-grow: 1;
+			padding: 1rem 0;
+		}
+
+		& > div:first-child {
+			border-right: 2px solid $border;
+		}
+
+		& > div.full {
+			border-top: 2px solid $border;
+			order: 2;
+			flex-grow: 2;
+
+			span {
+				color: #23E04B;
+			}
+		}
+
+		p {
+			color: $lightBlue;
+			font: {
+				size: 0.9rem;
+				weight: bold;
+			}
+			line-height: 1.3rem;
+		}
+
+		span {
+			font: {
+				size: 1.7rem;
+				weight: bolder;
+			}
+			line-height: 2.3rem;
+			color: $darkBlue;
+		}
+	}
+
+	button.submit {
+		position: absolute;
+		bottom: -1.2rem;
+		left: 0;
+		right: 0;
+		margin: auto;
+		padding: 0.75rem 1.5rem;
+		background: #FF536D;
+		border: none;
+		border-radius: 20px;
+		font-weight: bold;
+		text-transform: uppercase;
+		color: #ffffff;
+
+		&:hover {
+			cursor: pointer;
+			box-shadow: 2px 2px 15px rgba(0,0,0,0.2);
+		}
+
+		&:focus {
+			outline: none;
+		}
+
+		&:active {
+			outline: none;
+			box-shadow: inset 2px 2px 15px rgba(0,0,0,0.2);
+		}
+	}
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background: #ffffff;
+	padding: 1rem;
+
+	a {
+		color: #757575;
+		font-weight: bold;
+		text-decoration: none;
+	}
+
+	a.codepen {
+		float: right;
+	}
+}
+

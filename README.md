@@ -10,7 +10,7 @@ which collects the archives from the Daily UI challenge.
 | Day 	| Description  	| Design                                                                            	| Codepen   |
 |-----	|--------------	|-----------------------------------------------------------------------------------	| -------   |
 | 001 	| Sign up page 	| [Duminda Perera](https://dribbble.com/shots/2292415-Daily-UI-001-Day-001-Sign-Up) 	| [Day 001](https://codepen.io/mlledesmeules/pen/mdJONrp) |
-| 002 	| Checkout page | []()                                                                                  |           |
+| 002 	| Checkout page | [Pat Wasik](https://dribbble.com/shots/2418332-Daily-UI-22-Payment)                   | [Day 002](https://codepen.io/mlledesmeules/pen/NWqdPqL) |
 | 003 	| Landing page	| []()                                                                                  |           |
 | 004 	| Calculator	| []()                                                                                  |           |
 | 005 	| App icon      |                                                                                   	|           |

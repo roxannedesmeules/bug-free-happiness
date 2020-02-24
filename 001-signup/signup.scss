@@ -103,13 +103,8 @@ body {
 
 		> input {
 			background: none;
-			padding: 0.8rem 0 0.8rem 0rem;
-			border: {
-				top: 0px;
-				left: 0px;
-				right: 0px;
-				bottom: 1px solid #b7bbc8;
-			}
+			padding: 0.8rem 0 0.8rem 0;
+			border-bottom: 1px solid #b7bbc8;
 
 			&::placeholder {
 				color: transparent;
@@ -182,5 +177,9 @@ footer {
 		color: #757575;
 		font-weight: bold;
 		text-decoration: none;
+	}
+
+	a.codepen {
+		float: right;
 	}
 }
